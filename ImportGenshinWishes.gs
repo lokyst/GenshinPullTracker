@@ -9,7 +9,8 @@ function FetchAllWishes(authKeySheet = "GenshinKey") {
   var BannerIdLookup ={
     "Novice": 100,
     "Permanent": 200,
-    "Character Event": 301
+    "Character Event": 301,
+    "Weapon": 302
   }
 
   // Get the Authkey from the user
