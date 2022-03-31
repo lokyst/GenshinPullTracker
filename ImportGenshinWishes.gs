@@ -10,14 +10,14 @@ function FetchAllWishes(authKeySheet = "GenshinKey") {
     "Novice": 100,
     "Permanent": 200,
     "Character Event": 301,
-    "Weapon": 302
+    "Weapon Event": 302
   }
 
   // Get the Authkey from the user
   var webURL = getURLFromSheet(authKeySheet);
 
   // Check validity of URL
-  if (webURL.indexOf("https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?authkey") < 0) {
+  if (webURL.indexOf("https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha/index.html?authkey_ver=1") < 0) {
     SpreadsheetApp.getUi().alert("Invalid URL format.")
     return;
   }
